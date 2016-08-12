@@ -13,4 +13,6 @@ def median(input_list):
         return (sorted_list[first_pos] +
                 sorted_list[first_pos + 1]) / 2
 
-print(median([4, 5, 5, 4]))
+# print(median([4, 5, 5, 4]))
+
+print(not not {})
