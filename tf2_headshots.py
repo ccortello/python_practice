@@ -1,8 +1,3 @@
-# Author = CCortello
-# Date = 8/12/2016
-
-"""Description"""
-
 import math
 import urllib.request
 
@@ -25,10 +20,9 @@ def get_percentage(a, b):
         current_percentage = math.ceil(percentage)
 
     while current_percentage <= 99:
-        headshots = math.floor((a - b * current_percentage / 100) / (
-            current_percentage / 100 - 1) + 1)
-        print(str(current_percentage) + '\t' + str(headshots) + '\t\t' +
-              str(headshots + a))
+        headshots = math.floor((a - b * current_percentage / 100)
+                               / (current_percentage / 100 - 1) + 1)
+        print(str(current_percentage) + '\t' + str(headshots) + '\t\t' + str(headshots + a))
         current_percentage += 1
 
 
